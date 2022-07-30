@@ -1,14 +1,21 @@
 {
+  "author": {
+    "name": "Salman",
+    "email": "salmannova@gmail.com"
+  },
   "name": "react-api-calls",
   "private": false,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "license": "MIT",
+  "repository": "salman15/react-api-calls",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -18,5 +25,30 @@
     "@vitejs/plugin-react": "^2.0.0",
     "typescript": "^4.6.4",
     "vite": "^3.0.0"
+  },
+  "keywords": [],
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "main": "./dist/react-api-calls.umd.js",
+  "module": "./dist/react-api-calls.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/react-api-calls.es.js",
+      "require": "./dist/react-api-calls.umd.js"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
