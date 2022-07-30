@@ -3,9 +3,9 @@
     "name": "Salman",
     "email": "salmannova@gmail.com"
   },
-  "name": "react-api-calls",
+  "name": "react-api-hook-calls",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "license": "MIT",
   "repository": "salman15/react-api-calls",
