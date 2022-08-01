@@ -5,18 +5,18 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/hooks/index.ts"),
+      entry: path.resolve(__dirname, "src/index.ts"),
       name: "React api calls",
-      fileName: (format) => `react-api-calls.${format}.js`,
+      fileName: (format) => `react-api-calls.${format}.js`
     },
     rollupOptions: {
       external: ["react", "react-dom"],
       output: {
         globals: {
-          react: "React",
-        },
-      },
-    },
+          react: "React"
+        }
+      }
+    }
   },
-  plugins: [react()],
+  plugins: [react()]
 });
